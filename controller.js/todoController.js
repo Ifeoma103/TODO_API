@@ -1,5 +1,5 @@
 // const { Router } = require('express');
-const TodoModel = require('../Model.js/todoModel');
+const TodoModel = require('../Model.js/todoModel.js');
 
 //crud
 const getAllTodos = async (req, res) => {
@@ -49,12 +49,11 @@ try {
 const updateTodo = async (req, res) => {
     try {
         const {id} = req.params;
+        // const identity = req.body.id;
+       // const name = req.body.name;
+      // const completed = req.body.completed;
     // const {completed} = req.body;
-    const todo = await TodoModel.findByIdAndUpdate(
-        id,
-        {completed: true},
-        {new: true},
-    );
+    const todo = await TodoModel.findByIdAndUpdate( id, {completed: true}, {new: true}, );
     return res.status(200).json ({
         message: "Todo updated",
         data: todo,

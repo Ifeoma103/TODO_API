@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
- const routes = require('./routes.js/todoRoutes');
+ const routes = require('./routes.js/todoRoutes.js');
 
 const mongoose = require('mongoose');
 const live_url = "mongodb://Dev_Faith:Mmasinachi@ac-qsq3gks-shard-00-00.rgetafs.mongodb.net:27017,ac-qsq3gks-shard-00-01.rgetafs.mongodb.net:27017,ac-qsq3gks-shard-00-02.rgetafs.mongodb.net:27017/AuthenticationDB?ssl=true&replicaSet=atlas-17z6tn-shard-0&authSource=admin&appName=Cluster0";

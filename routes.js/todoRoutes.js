@@ -8,7 +8,7 @@ const {
     getOneTodo,
     updateTodo,
     deleteTodo,
-} = require('../controller.js/todoController');
+} = require('../controller.js/todoController.js');
 
 
 
