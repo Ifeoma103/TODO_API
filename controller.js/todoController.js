@@ -1,5 +1,5 @@
 // const { Router } = require('express');
-const TodoModel = require('../Model.js/todoModel.js');
+const TodoModel = require('../model.js/todoModel.js');
 
 //crud
 const getAllTodos = async (req, res) => {
@@ -11,7 +11,7 @@ const getAllTodos = async (req, res) => {
         })
     } catch (err) {
         return res.status(500).json ({
-            error: error.message ,
+            error: error.message,
         })
     }
 }
